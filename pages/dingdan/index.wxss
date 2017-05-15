@@ -1,0 +1,26 @@
+.box{
+  display: flex;
+  height: 100%;
+  width: 100%;
+
+}
+image{
+  width: 400rpx;
+  height: 400rpx;
+  margin: 100rpx auto 0;
+  border-radius: 50%;
+}
+.desc{
+  text-align: center;
+  margin-top: 40rpx;
+}
+button{
+width:180rpx;
+height:100rpx;
+margin-top: 40rpx;
+background-color: yellow;
+font-size: 40rpx;
+font-weight: bold;
+color: #fff;
+letter-spacing: 15rpx;
+}

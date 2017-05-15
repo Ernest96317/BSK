@@ -1,0 +1,13 @@
+<view class="ipt">
+  <input class="input" name="userName" placeholder="手机号" />
+  <button>发送验证码</button>
+</view>
+<view class="ipt">
+  <input class="input" name="userName" placeholder="验证码" />
+</view>
+<view class="title">
+  温馨提示：未注册必胜客帐号，登录时自动注册，且代表您已同意<em>《用户注册协议》</em>
+</view>
+<view class="btn">
+  <button>登录</button>
+</view>

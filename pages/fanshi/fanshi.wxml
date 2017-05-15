@@ -1,0 +1,32 @@
+<view class="pi-category">
+  <block wx:for="{{items}}" wx:key="item">
+    <view class="flex item" bindtap="bindViewTap">
+      <view class="item_left">
+        <image src="{{item.imageUrl}}"/>
+      </view>
+      <view class="flex_auto item_middle">
+        <view>
+          <text class="title">{{item.sub_name}}</text>
+          <text class="title ">￥{{item.sub_price}}</text>
+          <text class="title">{{item.sub_desc}}</text>
+        </view>
+      </view>
+      <view class="item_right">
+          <text class="action">+</text>
+      </view>
+    </view>
+  </block>
+</view>
+
+<view class="cart">
+  <view class="data" bindtap="showCartDetail">
+    <view class="icon">
+      <image src="cart.png"></image>
+      <!-- <view class="count">{{cart.count}}</view> -->
+    </view>
+    <!-- <view class="total">￥{{cart.total}}</view> -->
+  </view>
+  <form bindsubmit="submit" report-submit="true">
+    <button class="yellow {{cart.count?'':'disabled'}}" formType="submit" disabled="{{!cart.count}}">去结算</button>
+  </form>
+</view>

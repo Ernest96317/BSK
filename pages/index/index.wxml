@@ -1,0 +1,75 @@
+<!--index.wxml-->
+<view id="wrap" ontouchstart>
+
+  		<swiper class="banner" indicator-dots="true" autoplay="true" interval="3000" duration="500">
+  			<block wx:for="{{banners}}" wx:key="id">
+  				<swiper-item>
+  					<image src="{{item.img}}"/>
+  				</swiper-item>
+  			</block>
+  		</swiper>
+
+          <view class="icons" >
+        			<swiper-item>
+                <view class="icon" >
+        					<!-- <text>披萨</text> -->
+                  <navigator url="../action/action" >披萨</navigator>
+        				</view>
+                <view class="icon" >
+        					<!-- <text>饭食</text> -->
+                  <navigator url="../fanshi/fanshi" >饭食</navigator>
+        				</view>
+                <view class="icon" >
+        					<!-- <text>意面</text> -->
+                  <navigator url="../action/action" >意面</navigator>
+        				</view>
+                <view class="icon" >
+        					<!-- <text>米线</text> -->
+                  <navigator url="../action/action" >米线</navigator>
+        				</view>
+                <view class="icon" >
+                  <!-- <text>小吃</text> -->
+                  <navigator url="../action/action" >小吃</navigator>
+                </view>
+                <view class="icon" >
+                  <!-- <text>饮料</text> -->
+                  <navigator url="../action/action" >饮料</navigator>
+                </view>
+                <view class="icon" >
+                  <!-- <text>汤</text> -->
+                  <navigator url="../action/action" >汤</navigator>
+                </view>
+                <view class="icon" >
+                  <!-- <text>沙拉和鲜蔬</text> -->
+                  <navigator url="../action/action" >沙拉和鲜蔬</navigator>
+                </view>
+        			</swiper-item>
+        		</view>
+
+  <view class="main">
+    <view class="pi-category">
+      <block wx:for="{{items}}" wx:key="item">
+        <view class="flex item" bindtap="bindViewTap">
+          <view class="item_left">
+            <image src="{{item.imageUrl}}"/>
+          </view>
+          <view class="flex_auto item_middle">
+            <view>
+              <text class="title">{{item.sub_name}}</text>
+              <text class="title price">￥{{item.sub_price}}</text>
+              <text class="title">{{item.sub_desc}}</text>
+            </view>
+
+          </view>
+          <view class="item_right">
+              <navigator url="../action/action" class="action">
+                <button>开始订餐</button></navigator>
+          </view>
+        </view>
+      </block>
+    </view>
+  </view>
+
+  <view class="loading">更多正在加载中…</view>
+
+</view>

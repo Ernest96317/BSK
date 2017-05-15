@@ -1,0 +1,70 @@
+#wrap {
+  width: 100%;
+  height: 100%;
+  background-color: #f2f2f2;
+}
+.banner image {
+	width: 100%;
+	height: 100%;
+}
+ .icon {
+	float: left;
+	display: -webkit-flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	width: 25%;
+	text-align: center;
+	margin: 10rpx 0;
+}
+.icons .icon navigator{
+	color: #000;
+	font-size: 24rpx;
+  font-weight: bold;
+	line-height: 3;
+  border-radius: 50%;
+  background: #fff;
+}
+.main{
+  margin-top: 200rpx;
+  border-top: 15rpx solid #fff;
+}
+.item{
+  border-bottom:5rpx solid #fff;
+}
+.pi-category image {
+	width: 160rpx;
+	height: 160rpx;
+  border-radius: 50%;
+}
+.item_middle{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 20rpx;
+  word-wrap: break-word;
+word-break: normal;
+}
+
+.item_middle .price{
+  color:red;
+}
+.item_right{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.action{
+  margin-right: 20rpx;
+  font-weight: bold;
+  padding: 4rpx 12rpx;
+  font-size: 20px;
+
+  /*background-color: yellow;*/
+    z-index: 1;
+}
+.loading {
+	font-size: 32rpx;
+	text-align: center;
+	line-height: 2;
+	margin-bottom: 20rpx;
+}

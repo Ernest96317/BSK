@@ -1,0 +1,26 @@
+/**app.wxss**/
+.container {
+font-family: Helvetica Neue,helvetica,Arial,sanserif;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+box-sizing: border-box;
+}
+page{
+  background-color: #f2f2f2;
+}
+.flex{
+  display: flex;
+}
+.flex_auto{
+  flex:1
+}
+.item_middle .title ,.item_left .title{
+  font-size: 16px;
+  color: #333;
+}
+.item_middle .sub_title ,.item_left .sub_title,.item_middle .actor{
+  font-size: 14px;
+  color: #666;
+  margin:2px 0px;
+}

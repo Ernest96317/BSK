@@ -1,0 +1,6 @@
+<view class="box">
+  <image src="../../image/7.jpg"></image>
+</view>
+<view class="desc">您还没有登录，请登录后查看订单</view>
+
+<navigator url="../denglu/denglu" ><button>登录</button></navigator>

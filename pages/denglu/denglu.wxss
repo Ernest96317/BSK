@@ -1,0 +1,30 @@
+.ipt button {
+  width: 250rpx;
+  position: absolute;
+  color: #fff;
+  background-color: blue;
+  top: 0;
+  right: 0;
+  z-index: 5;
+  display: block;
+}
+.ipt .input{
+  background-color: #fff;
+  height: 2.4rem;
+  text-align: left;
+  border-bottom: 1px solid yellow;
+}
+.title {
+  font-size: 30rpx;
+  margin: 30rpx ;
+}
+.title em{
+  color: blue;
+}
+.btn button{
+  color: #fff;
+  background-color: yellow;
+  margin: 0 30rpx;
+  letter-spacing: 20rpx;
+  font-weight: ;
+}
